@@ -13,17 +13,10 @@ function WeatherBlock (data) {
     const {
       name,
       country,
-      localtime,
-      lat,
-      lon,
-      tz_id: tzid
     } = location;
     const {
       temp_c: tempC,
-      temp_f: tempF,
-      condition: conditionCurrent,
       feelslike_c: feelslikeC,
-      feelslike_f: feelslikeF,
       wind_mph: windKph,
       humidity
     } = current;
@@ -36,6 +29,7 @@ function WeatherBlock (data) {
         <p> {tempC} </p>
         <p> {feelslikeC} </p>
         <p> {windKph} </p>
+        <p> {humidity} </p>
       </div>
     )
   }
