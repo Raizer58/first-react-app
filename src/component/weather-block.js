@@ -40,8 +40,6 @@ function WeatherBlock (data) {
     )
   }
 
-  let weatherScreen;
-
   return (
     <div className = "main__weather-block">
       {loadScreen}
