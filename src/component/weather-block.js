@@ -26,10 +26,10 @@ function WeatherBlock (data) {
         <p> {name} </p>
         <p> {country} </p>
         <p> {time} </p>
-        <p> {tempC} </p>
-        <p> {feelslikeC} </p>
-        <p> {windKph} </p>
-        <p> {humidity} </p>
+        <p> temp - {tempC} </p>
+        <p> feelslike -{feelslikeC} </p>
+        <p> wind - {windKph} </p>
+        <p> humidity - {humidity} </p>
       </div>
     )
   }
