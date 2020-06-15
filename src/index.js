@@ -37,7 +37,7 @@ function Weather () {
 
   return (
     <div>
-      <SearchBlock submit={ submitHandler}/>
+      <SearchBlock submit = { submitHandler }/>
       <WeatherBlock weatherData = { weatherData } time = { time }/>
     </div>
   );

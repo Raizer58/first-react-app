@@ -6,7 +6,7 @@ function SearchBlock (data) {
     <form onSubmit={(event)=> {
       event.preventDefault();
       const city = event.currentTarget[0].value;
-      submit(city)
+      submit(city);
       }
     }>
       <input type="text" placeholder="Input town" required autoFocus autoComplete="off"></input>
