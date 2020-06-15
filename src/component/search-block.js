@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 function SearchBlock (data) {
-  console.log(arguments)
-  console.log(data)
   const { submit } = data;
   return (
     <form onSubmit={(event)=> {
       event.preventDefault();
-      submit(event.currentTarget[0].value)
+      const city = event.currentTarget[0].value;
+      submit(city)
       }
     }>
       <input type="text" placeholder="Input town" required autoFocus autoComplete="off"></input>
